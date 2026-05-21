@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black_trasnparente">#80000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="verde_transparente">#80CCD4D4</color>
+    <color name="verde_mas_transparente">#00CCD4D4</color>
+    <color name="verde">#a8b8b5</color>
+    <color name="gris_claro">#2d363b</color>
+    <color name="gris_claro_home">#1D2226</color>
+    <color name="gris_claro2">#374045</color>
+    <color name="gray_hint">#FF888888</color>
+    <color name="rojo">#892119</color>
+    <color name="verdeConfirmar">#44D149</color>
+    <color name="editar_naranja">#FF9800</color>
+
+</resources>

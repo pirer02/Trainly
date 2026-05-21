@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@color/gris_claro" android:padding="12dp">
+    <!--  Fila superior: etiqueta ("De:" o "Para:") + usuario  -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:id="@+id/tvMessageLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="De:" android:textColor="@color/white" android:textStyle="bold" android:layout_marginEnd="4dp"/>
+        <TextView android:id="@+id/tvMessageUser" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/white" android:text="usuario_origen"/>
+    </LinearLayout>
+    <!--  Contenido del mensaje  -->
+    <TextView android:id="@+id/tvMessageContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/white" android:text="Aquí va el contenido del mensaje" android:layout_marginTop="4dp" android:layout_marginBottom="8dp"/>
+    <!--  Botón de acción: "Responder" o "Borrar"  -->
+    <Button android:id="@+id/btnMessageAction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/button_background_1" app:backgroundTint="@null" android:textColor="@color/black" android:textSize="20dp" android:text="Responder"/>
+</LinearLayout>

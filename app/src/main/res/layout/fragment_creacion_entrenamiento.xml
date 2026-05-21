@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verde"
+    tools:context=".Fragmentos.GenerarEntrenamiento.CreacionEntrenamiento">
+
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="248dp"
+        android:layout_height="48dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Buscar ejercicio"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:inputType="text"
+
+        app:layout_constraintBottom_toTopOf="@+id/btnConfirmar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.118" />
+
+
+    <TextView
+        android:id="@+id/fechaEntrenamiento2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/searchBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_2"
+        android:text="Salir"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnConfirmar"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938" />
+
+    <Button
+        android:id="@+id/btnConfirmar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_2"
+        android:text="Continuar"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ejercicios Escogidos"
+        android:textSize="20dp"
+        android:background="@color/gris_claro"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/ejerciciosEscogidos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ejerciciosEscogidos"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBar"
+        app:layout_constraintVertical_bias="0.095"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvListaNombres"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ejerciciosEscogidos"
+        app:layout_constraintVertical_bias="0.364" />
+
+    <Button
+        android:id="@+id/filtroPierna"
+        android:textSize="10dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Pierna"
+        app:layout_constraintBottom_toTopOf="@+id/rvListaNombres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ejerciciosEscogidos"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/filtroTorso"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Torso"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/rvListaNombres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ejerciciosEscogidos"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/filtroFullbody"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Full Body"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/rvListaNombres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.353"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ejerciciosEscogidos"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/filtroTodo"
+        android:textSize="10dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Todos"
+        app:layout_constraintBottom_toTopOf="@+id/rvListaNombres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/filtroPierna"
+        app:layout_constraintTop_toBottomOf="@+id/ejerciciosEscogidos"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

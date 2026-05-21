@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">TRAINLY</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_menu_navegacion">MenuNavegacion</string>
+
+
+    <string-array name="genero_array">
+        <item>Hombre</item>
+        <item>Mujer</item>
+        <item>Otro</item>
+    </string-array>
+
+
+    <!-- … otras cadenas … -->
+
+    <string name="email_body"><![CDATA[
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+          <meta charset="UTF-8">
+          <title>Código de confirmación:</title>
+        </head>
+        <body style="margin:0;padding:20px;font-family:Arial,sans-serif;background:#f4f4f4;">
+          <div style="max-width:600px;margin:0 auto;background:#fff;border-radius:8px;overflow:hidden;
+                      box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+            <div style="background:#007bff;color:#fff;padding:20px;text-align:center;">
+              <h1 style="margin:0;font-size:24px;">Código de confirmación: </h1>
+            </div>
+            <div style="padding:30px;color:#333;line-height:1.5;">
+              <p>Gracias por unirte a <strong>Trainly</strong>. Para activar tu cuenta, usa este código:</p>
+              <p style="text-align:center;margin:30px 0;">
+                <span style="display:inline-block;padding:15px 25px;font-size:20px;
+                             color:#007bff;border:2px dashed #007bff;border-radius:4px;">
+                  <strong>%1$s</strong>
+                </span>
+              </p>
+              <p style="font-size:14px;color:#555;">No compartas este código con nadie. Si no pediste este correo, ignóralo.</p>
+            </div>
+            <div style="background:#f9f9f9;padding:15px;text-align:center;font-size:12px;color:#999;">
+              © 2025 Trainly. Todos los derechos reservados.
+            </div>
+          </div>
+        </body>
+        </html>
+    ]]></string>
+
+    <string name="email_body_olvido"><![CDATA[
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+          <meta charset="UTF-8">
+          <title>Restaurar contraseña:</title>
+        </head>
+        <body style="margin:0;padding:20px;font-family:Arial,sans-serif;background:#f4f4f4;">
+          <div style="max-width:600px;margin:0 auto;background:#fff;border-radius:8px;overflow:hidden;
+                      box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+            <div style="background:#007bff;color:#fff;padding:20px;text-align:center;">
+              <h1 style="margin:0;font-size:24px;">Código de restauración: </h1>
+            </div>
+            <div style="padding:30px;color:#333;line-height:1.5;">
+              <p>Gracias por confiar en nosotros. Para restaurar su contraseña, use este código:</p>
+              <p style="text-align:center;margin:30px 0;">
+                <span style="display:inline-block;padding:15px 25px;font-size:20px;
+                             color:#007bff;border:2px dashed #007bff;border-radius:4px;">
+                  <strong>%1$s</strong>
+                </span>
+              </p>
+              <p style="font-size:14px;color:#555;">No compartas este código con nadie. Si no pediste este correo, ignóralo.</p>
+            </div>
+            <div style="background:#f9f9f9;padding:15px;text-align:center;font-size:12px;color:#999;">
+              © 2025 Trainly. Todos los derechos reservados.
+            </div>
+          </div>
+        </body>
+        </html>
+    ]]></string>
+
+
+</resources>

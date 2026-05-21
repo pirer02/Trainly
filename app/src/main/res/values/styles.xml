@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="checkBox" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/verde</item>
+
+    </style>
+
+    <style name="dialog">
+        <item name="android:background">@drawable/scrollview_rounded_bg</item>
+
+
+    </style>
+
+    <style name="MySpinnerPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+</resources>

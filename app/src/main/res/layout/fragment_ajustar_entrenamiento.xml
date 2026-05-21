@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/verde"
+    style=""
+    android:clipToOutline="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Muestra la fecha del entrenamiento -->
+        <TextView
+            android:id="@+id/fechaEntrenamiento2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="10dp"
+            android:text="30/12/2025"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/botonInfo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Info"
+            android:src="@android:drawable/ic_menu_info_details"
+            android:tint="@android:color/black" />
+    </LinearLayout>
+
+
+        <!-- Contenedor donde se insertarán los items de ejercicios -->
+        <LinearLayout
+            android:id="@+id/llEjerciciosContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Botones de guardar y salir -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnSalir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background_2"
+                android:textColor="@color/white"
+                app:backgroundTint="@null"
+                android:text="Salir" />
+
+            <View
+                android:layout_width="16dp"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background_2"
+                app:backgroundTint="@null"
+                android:textColor="@color/white"
+                android:text="Guardar" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

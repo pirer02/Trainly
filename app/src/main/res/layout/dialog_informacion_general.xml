@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conceptos de Entrenamiento"
+            android:layout_marginBottom="20dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/weight_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Peso: Es la carga utilizada en un ejercicio. Se mide en kilogramos (kg) y debe ajustarse según tus objetivos de entrenamiento."
+            android:textSize="18sp"
+            android:paddingBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/series_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Series: Conjunto de repeticiones. Un entrenamiento típico puede incluir varias series del mismo ejercicio."
+            android:textSize="18sp"
+            android:paddingBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/repetitions_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Repeticiones: Número de veces que se ejecuta un movimiento dentro de una serie. Influye en el desarrollo muscular y la resistencia."
+            android:textSize="18sp"
+            android:paddingBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/rpe_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• RPE (Rate of Perceived Exertion): Escala subjetiva del esfuerzo en una serie, del 1 al 10. Un RPE alto indica cercanía al fallo muscular."
+            android:textSize="18sp"
+            android:paddingBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• 1RM (One Rep Max): Máximo peso que puedes levantar en una única repetición con buena técnica."
+            android:textSize="18sp"
+            android:paddingBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Tempo: Es el ritmo de ejecución en segundos de cada repetición, especificando el tiempo dedicado a cada fase del movimiento (excéntrica, isométrico y concéntrico). Ejemplo: Tempo 321(3 segundos para subir, 2 manteniendose arriba y 1 para llegar a abajo)  y asi serie una repeticion con tempo."
+            android:textSize="18sp"
+            android:paddingBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Notas: Opción para añadir alguna sugerencia o apunte para darle un toque mas personal a tu entrenamiento."
+            android:textSize="18sp"
+            android:paddingBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"
+                android:paddingBottom="12dp"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:src="@drawable/flechacopiar">
+
+            </ImageView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": Opción para pegar los objetivos en los resultados finales para facilitar la edición."
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"
+                android:paddingBottom="12dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"
+                android:paddingBottom="12dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background_2"
+                android:paddingBottom="12dp"
+                android:text="DETALLES"
+                app:backgroundTint="@null"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": Botón para mostrar la informacion de las series corresponientes al campo NºSeries"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"
+                android:paddingBottom="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"
+                android:paddingBottom="12dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background_3"
+                android:paddingBottom="12dp"
+                android:text="VIDEO"
+                app:backgroundTint="@null"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": Opción para ver nombre,descripción y video explicativo predeterminado"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"
+                android:paddingBottom="12dp"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"
+                android:paddingBottom="12dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background_4"
+                android:paddingBottom="12dp"
+                android:text="VIDEO"
+                app:backgroundTint="@null"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": Misma funcionalidad que la opción anterior pero cambiando el video predeterminado por un video sugerido por el creador del entrenamiento"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"
+                android:paddingBottom="12dp"/>
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/details_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/tituloSugerido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Video sugerido"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTituloEjercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del ejercicio"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+
+    <EditText
+        android:id="@+id/etEnlaceEjercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pega aquí tu enlace sugerido"
+        android:inputType="textUri"
+        android:layout_marginBottom="24dp" />
+
+
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtubePlayerView2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/tvDescripcionEjercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripción del ejercicio"
+        android:layout_marginBottom="16dp" />
+
+
+
+    <Button
+        android:id="@+id/btnGuardarEnlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:background="@drawable/button_background_1"
+        android:backgroundTint="@null"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnSalirEnlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_2"
+        android:text="Salir"
+        android:backgroundTint="@null"
+        android:textColor="@android:color/white" />
+</LinearLayout>

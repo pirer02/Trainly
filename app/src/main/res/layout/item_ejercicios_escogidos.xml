@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#EEEEEE"
+    android:padding="8dp">
+
+    <!-- Fila superior: nombre del ejercicio, campo numérico y botón de detalles -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Nombre del ejercicio -->
+        <TextView
+            android:id="@+id/tvNombreEjercicio"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Nombre Ejercicio"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <!-- Campo numérico para definir la cantidad de filas a crear -->
+        <EditText
+            android:id="@+id/etNumeroCampos"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="NºSeries"
+            android:gravity="center"/>
+
+        <!-- Botón para mostrar/ocultar detalles -->
+        <Button
+            android:id="@+id/btnToggleDetalles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background_2"
+            app:backgroundTint="@null"
+            android:textColor="@color/white"
+            android:text="Detalles" />
+    </LinearLayout>
+
+    <!-- Contenedor para las filas generadas dinámicamente -->
+    <LinearLayout
+        android:id="@+id/llDetallesEjercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingTop="8dp" />
+
+    <!-- Línea separadora para diferenciar los ejercicios -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#CCCCCC" />
+</LinearLayout>

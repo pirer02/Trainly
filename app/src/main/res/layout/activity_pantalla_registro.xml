@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondosesion"
+    tools:context=".Actividades.MainActivity">
+
+    <!-- TU LAYOUT EXISTENTE -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linear_layout_style"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403">
+
+        <!-- ... TODOS TUS EDITTEXTS, SPINNER, CHECKBOXS ... -->
+
+        <EditText
+            android:id="@+id/usuarioRegistrate"
+            android:layout_width="255dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/style_edit_text"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789Ññ"
+            android:drawablePadding="8dp"
+            android:hint="Nombre Usuario"
+            android:textColorHint="@color/gray_hint"
+            android:padding="10dp"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/correoRegistrate"
+            android:layout_width="255dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/style_edit_text"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@.#-_*ñÑ"
+            android:drawablePadding="8dp"
+            android:hint="example@gmail.com"
+            android:textColorHint="@color/gray_hint"
+            android:padding="10dp"
+            android:textSize="14dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/contraseniaNueva"
+                android:layout_width="255dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_edit_text"
+                android:textColor="@color/black"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_@*#()/\\+-:;?¿!¡€$~"
+                android:drawablePadding="8dp"
+                android:hint="Su contraseña"
+                android:textColorHint="@color/gray_hint"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:paddingEnd="40dp"
+                android:textSize="14dp" />
+
+            <ImageButton
+                android:id="@+id/contraseniaNuevaVer"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/contraseniaNueva"
+                android:layout_alignEnd="@+id/contraseniaNueva"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="12dp"
+                android:background="@null"
+                android:contentDescription="Mostrar/Ocultar contraseña"
+                android:src="@drawable/ojo_contrasenia_tapada" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/contraseniaRepetir"
+                android:layout_width="255dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/style_edit_text"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_@*#()/\\+-:;?¿!¡€$~"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"
+                android:hint="Repita su contraseña"
+                android:textColorHint="@color/gray_hint"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:paddingEnd="40dp"
+                android:textSize="14dp" />
+
+            <ImageButton
+                android:id="@+id/contraseniaRepetirVer"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/contraseniaRepetir"
+                android:layout_alignEnd="@+id/contraseniaRepetir"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="12dp"
+                android:background="@null"
+                android:contentDescription="Mostrar/Ocultar contraseña"
+                android:src="@drawable/ojo_contrasenia_tapada" />
+        </RelativeLayout>
+
+        <!-- Género + Fecha -->
+        <LinearLayout
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Spinner
+                android:id="@+id/generoSpinner"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:textColorHint="@color/gray_hint"
+                android:background="@drawable/style_edit_text"
+                android:entries="@array/genero_array"
+                android:theme="@style/MySpinnerPopupTheme"
+                android:padding="10dp"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/fechaNacimiento"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/style_edit_text"
+                android:hint="Nacimiento"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_hint"
+                android:padding="10dp"
+                android:textSize="14dp"
+                android:focusable="false"
+                android:inputType="none" />
+        </LinearLayout>
+
+        <!-- Altura + Peso -->
+        <LinearLayout
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- Altura -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal"
+                android:background="@drawable/style_edit_text">
+
+                <EditText
+                    android:id="@+id/altura"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:maxLength="3"
+                    android:background="@android:color/transparent"
+                    android:hint="Altura"
+                    android:textColorHint="@color/gray_hint"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="cm"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Peso -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/style_edit_text">
+
+                <EditText
+                    android:id="@+id/peso"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Peso"
+                    android:textColor="@color/black"
+                    android:maxLength="6"
+                    android:textColorHint="@color/gray_hint"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="kg"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/yaTieneCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="¿Ya tienes cuenta? INICIAR SESION"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="italic"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/untitled" />
+
+    <Button
+        android:id="@+id/registrarse"
+        android:layout_width="212dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_background_2"
+        android:text="REGÍSTRATE"
+        android:textColor="@color/verde"
+        android:textSize="20dp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Al registrarte aceptas"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="términos y políticas de Trainly"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGÍSTRATE"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <!-- OVERLAY que bloquea la UI -->
+    <View
+        android:id="@+id/blocker"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#80000000"
+        android:visibility="gone"
+        android:clickable="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ProgressBar central -->
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

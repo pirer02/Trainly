@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutEstadisticas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".Fragmentos.VentanaEstadisticas">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ESTADÍSTICAS"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+       />
+
+
+    <!-- Barra de búsqueda -->
+    <EditText
+        android:id="@+id/etBuscarEjercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Buscar ejercicio"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="text" />
+
+    <!-- Lista de ejercicios historial -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHistorialEjercicios"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="8dp"
+        tools:listitem="@layout/item_ejercicios_historial" />
+
+</LinearLayout>

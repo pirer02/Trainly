@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondosesion"
+    tools:context=".Fragmentos.MenuLateral.Ajustes.CambiarContrasenia">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Button
+        android:id="@+id/botonCancelarCambioContraseniaOlvidada"
+        android:layout_width="337dp"
+        android:layout_height="52dp"
+        android:background="@drawable/button_background_2"
+        app:backgroundTint="@null"
+        android:textColor="@color/white"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonCambiarContraseniaOlvidada"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <Button
+        android:id="@+id/botonCambiarContraseniaOlvidada"
+        android:layout_width="337dp"
+        android:layout_height="52dp"
+        android:background="@drawable/button_background_1"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"
+        android:text="Cambiar Contraseña"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="310dp"
+        android:layout_height="150dp"
+        android:background="@drawable/linear_layout_style"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.185">
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/contraseniaNueva"
+                android:layout_width="255dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/style_edit_text"
+                android:hint="Contraseña nueva"
+                android:textColorHint="@color/gray_hint"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:paddingEnd="40dp"
+                android:textSize="14dp"
+                android:drawablePadding="8dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_@*#()/\+-:;?¿!¡€$~" />
+            />
+
+
+            <ImageButton
+                android:id="@+id/verContraseniaNuevaCambiar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/contraseniaNueva"
+                android:layout_alignEnd="@+id/contraseniaNueva"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="12dp"
+                android:background="@null"
+                android:contentDescription="Mostrar/Ocultar contraseña"
+                android:src="@drawable/ojo_contrasenia_tapada" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/contraseniaNuevaRepetir"
+                android:layout_width="255dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/style_edit_text"
+                android:hint="Repetir contraseña actual"
+                android:textColorHint="@color/gray_hint"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:paddingEnd="40dp"
+                android:textSize="14dp"
+                android:drawablePadding="8dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_@*#()/\+-:;?¿!¡€$~" />
+            />
+
+
+            <ImageButton
+                android:id="@+id/verContraseniaNuevaRepetirCambiar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/contraseniaNuevaRepetir"
+                android:layout_alignEnd="@+id/contraseniaNuevaRepetir"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="12dp"
+                android:background="@null"
+                android:contentDescription="Mostrar/Ocultar contraseña"
+                android:src="@drawable/ojo_contrasenia_tapada" />
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambiar Contraseña"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <TextView
+        android:id="@+id/nombreNotificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:text="Confirmado eres el usuario: ejemplo"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
