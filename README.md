@@ -25,7 +25,7 @@
 ## 🚀 Descarga e Instalación
 Puedes obtener el ejecutable compilado listo para instalar y probar directamente desde el apartado de **Releases** en la barra lateral.
 
-* [Descargar Trainly (.apk / .exe)](ENLACE_A_TU_RELEASE)
+* [Descargar Trainly (.apk)](https://github.com/pirer02/Trainly/releases/download/1.0.0/Trainly.apk)
 
 Para clonar de forma local y explorar el código fuente:
 ```bash
