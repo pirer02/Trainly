@@ -24,7 +24,7 @@
 ## 🛠️ Tecnologías Utilizadas
 * **Lenguaje de Programación:** Java
 * **Base de Datos y Autenticación:** Firebase (Cloud Firestore / Realtime Database y Firebase Auth)
-* **Entorno de Desarrollo:** Android Studio / Java SE *(Modifica según corresponda)*
+* **Entorno de Desarrollo:** Android Studio / Java SE
 
 ## 🚀 Descarga e Instalación
 Puedes obtener el ejecutable compilado listo para instalar y probar directamente desde el apartado de **Releases** en la barra lateral.
